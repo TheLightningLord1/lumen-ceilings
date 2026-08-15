@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LUMEN CEILINGS — Натяжные потолки Туапсе</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <base target="_blank">
+        </head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container header-inner">
+            <div class="logo">LUMEN <span>CEILINGS</span></div>
+
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#calculator">Калькулятор</a></li>
+                    <li><a href="#portfolio">Портфолио</a></li>
+                    <li><a href="#contact">Контакты</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-contact">
+                <a href="tel:+79180790227" class="phone">+7 (918) 079-02-27</a>
+                <span class="work-hours">Ежедневно 9:00 - 21:00</span>
+            </div>
+
+            <div class="menu-toggle">☰</div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-content">
+            <div class="features-badges">
+                <span class="badge">Профессиональный монтаж в Туапсе</span>
+            </div>
+            <h1>Натяжной потолок без пыли и выноса мебели</h1>
+            <p>Закрываем мебель плёнкой, мусор увозим с собой.</p>
+            <div class="hero-buttons">
+                <a href="#calculator" class="btn">Рассчитать цену за минуту</a>
+                <a href="#portfolio" class="btn btn-outline">Посмотреть работы</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Section -->
+    <section class="trust-section fade-in-section">
+        <div class="container">
+            <div class="trust-grid">
+                <div class="trust-card">
+                   
+                    <p>Гарантия на все работы и материалы</p>
+                </div>
+                <div class="trust-card">
+                    <h4>200+ потолков в Туапсе</h4>
+                    <p>Установили более 200 потолков в городе и районе</p>
+                </div>
+                <div class="trust-card">
+                    <h4>Чистый монтаж: плёнка, пылесос, вывоз мусора</h4>
+                    <p>Работаем аккуратно, убираем за собой</p>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Calculator Section -->
+    <section id="calculator" class="calculator-section fade-in-section">
+        <div class="container">
+            <h2 class="section-title">Узнайте цену прямо сейчас — это занимает минуту</h2>
+
+            <div class="calc-wrapper">
+                <!-- Inputs -->
+                <div class="calc-inputs">
+                    <div class="range-container">
+                        <label for="areaRange">Площадь помещения: <span id="areaValue">1</span> м²</label>
+                        <input type="range" id="areaRange" min="1" max="100" value="1">
+                    </div>
+
+                    <div class="input-group">
+                        <label for="materialType">Тип полотна</label>
+                        <select id="materialType">
+                            <option value="650">Матовый (Standard)</option>
+                            <option value="650">Сатиновый (Soft)</option>
+                            <option value="700">Глянцевый (Reflect)</option>
+                            <option value="1200">Теневой профиль (EuroKRAAB)</option>
+                        </select>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="corners">Количество углов (шт)</label>
+                        <input type="number" id="corners" value="4" min="0">
+                    </div>
+
+                    <div class="input-group">
+                        <label for="lights">Светильники / Люстры (шт)</label>
+                        <input type="number" id="lights" value="0" min="0">
+                    </div>
+
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="pipes">
+                        <label for="pipes" style="margin:0; font-weight:400;">Обвод труб (+300₽/шт)</label>
+                    </div>
+                    <div class="input-group">
+                         <input type="number" id="pipesCount" value="0" min="0" placeholder="Кол-во труб" disabled>
+                    </div>
+                </div>
+
+                <!-- Result -->
+                <div class="calc-result">
+                    <h3>Итоговая стоимость:</h3>
+                    <div class="price-display" id="totalPrice">0 ₽</div>
+                    <p class="price-label">*Цена является ориентировочной</p>
+                    <button class="btn" id="fixPriceBtn">Зафиксировать цену</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="fade-in-section">
+        <div class="container">
+            <h2 class="section-title">Наши работы</h2>
+            <div class="portfolio-grid">
+                <!-- Project 1 -->
+                <div class="project-card" data-badge="18 м², матовый — 28 000 ₽">
+                    <div class="project-img">
+                        <img src="img/work1.jpg" alt="Матовые потолки">
+                        <span class="project-badge">18 м², матовый — 28 000 ₽</span>
+                    </div>
+                    <div class="project-info">
+                        <p class="project-meta">Матовое полотно, скрытый карниз</p>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="project-card" data-badge="24 м², глянцевый — 35 000 ₽">
+                    <div class="project-img">
+                        <img src="img/work2.jpg" alt="Глянцевые потолки">
+                        <span class="project-badge">24 м², глянцевый — 35 000 ₽</span>
+                    </div>
+                    <div class="project-info">
+                        <p class="project-meta">Глянцевое полотно, точечные светильники</p>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="project-card" data-badge="32 м², сатиновый — 42 000 ₽">
+                    <div class="project-img">
+                        <img src="img/work3.jpg" alt="Сатиновые потолки">
+                        <span class="project-badge">32 м², сатиновый — 42 000 ₽</span>
+                    </div>
+                    <div class="project-info">
+                        <p class="project-meta">Теневой примыкание, LED подсветка</p>
+                    </div>
+                </div>
+                <!-- Project 4 -->
+                <div class="project-card" data-badge="45 м², теневой профиль — 68 000 ₽">
+                    <div class="project-img">
+                        <img src="img/work4.jpg" alt="Теневой профиль">
+                        <span class="project-badge">Теневой профиль, тёмный премиум</span>
+                    </div>
+                    <div class="project-info">
+                        <p class="project-meta">Черный теневой профиль, премиальное полотно, контурная подсветка</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="reviews-section fade-in-section">
+        <div class="container">
+            <h2 class="section-title">Отзывы клиентов</h2>
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <h4>Михаил</h4>
+                    <p>«Заказывали потолок в зал 14м². Сделали быстро. Качеством доволен, рекомендую!»</p>
+                </div>
+                <div class="review-card">
+                    <h4>Елена</h4>
+                    <p>«Очень понравился подход — замерщик приехал вовремя, всё объяснил. Потолок стоит уже год, никаких проблем.»</p>
+                </div>
+                <div class="review-card">
+                    <h4>Дмитрий</h4>
+                    <p>«Делали тёмный потолок в новой квартире. Выглядит отлично, цена адекватная.»</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact" class="form-section fade-in-section">
+        <div class="container">
+            <h2 class="section-title">Вызовите замерщика бесплатно</h2>
+            <p style="text-align: center; margin-bottom: 30px; opacity: 0.9;">Не понравится — просто не закажете, никаких обязательств</p>
+
+            <form class="measure-form" id="leadForm">
+                <div class="form-group">
+                    <input type="text" id="name" placeholder="Ваше имя (необязательно)">
+                </div>
+                <div class="form-group">
+                    <input type="tel" id="phone" placeholder="Ваш телефон *" required pattern="[0-9+\-\(\)\s]{10,}">
+                </div>
+                <button type="submit" class="btn form-btn">Вызвать замерщика бесплатно</button>
+                <p id="formMessage" style="margin-top:15px; font-size:0.9rem; text-align:center;"></p>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>LUMEN CEILINGS</h4>
+                    <p>Натянуть может каждый. Удовлетворить — профессионал.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Контакты</h4>
+                    <ul>
+                        <li>+7 (918) 079-02-27</li>
+                        <li>sasov-78@mail.ru</li>
+                        <li>г. Туапсе</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2026 LUMEN CEILINGS. Все права защищены.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Плавающая кнопка WhatsApp -->
+   <a href="https://wa.me/79180790227" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Написать в WhatsApp">
+    <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+        <path d="M16 0c-8.837 0-16 7.163-16 16 0 2.825 0.737 5.607 2.137 8.048l-2.137 7.952 7.933-2.127c2.42 1.37 5.173 2.127 8.067 2.127 8.837 0 16-7.163 16-16s-7.163-16-16-16zM16 29.467c-2.482 0-4.908-0.646-7.07-1.87l-0.507-0.292-5.245 1.407 1.407-5.245-0.292-0.507c-1.224-2.162-1.87-4.588-1.87-7.07 0-7.72 6.28-14 14-14s14 6.28 14 14-6.28 14-14 14zM21.793 18.793c-0.214-0.107-1.262-0.622-1.456-0.694-0.194-0.072-0.336-0.107-0.477 0.107s-0.547 0.694-0.672 0.836c-0.125 0.142-0.25 0.16-0.464 0.053-1.783-0.893-2.953-1.591-4.107-3.571-0.308-0.529 0.308-0.491 0.884-1.636 0.098-0.194 0.049-0.363-0.027-0.509-0.076-0.146-0.672-1.619-0.921-2.217-0.242-0.579-0.487-0.5-0.672-0.509-0.174-0.009-0.373-0.009-0.571-0.009s-0.52 0.071-0.793 0.366c-0.272 0.295-1.04 1.018-1.04 2.476s1.065 2.871 1.213 3.069c0.148 0.198 2.095 3.2 5.076 4.487 2.981 1.288 2.981 0.859 3.529 0.805 0.548-0.054 1.262-0.516 1.44-1.013 0.178-0.497 0.178-0.924 0.125-1.013-0.053-0.089-0.214-0.142-0.428-0.249z"/>
+    </svg>
+</a>
+<script src="./js/main.js"></script>
+</body>
+</html>
